@@ -6,7 +6,7 @@ url: http://www.wangning1995.com
 #resume_site: http://www.hifreud.com/Resume.io/
 github: https://github.com/1878708493/
 baseurl: ""
-description: Actually, less is more!
+description: 宅又非宅的技术又非技术男
 meta_description: 王宁;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
 motto: It's our wits that make us men.
 banner: 学而不思则罔，思而不学则殆。
@@ -14,11 +14,13 @@ banner: 学而不思则罔，思而不学则殆。
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
 paginate: 10
+gems: [jekyll-paginate]
+highlighter: true
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
 github_username: 1878708493
-highlighter: rouge
+#highlighter: rouge
 
 # Build settings
 markdown: kramdown
