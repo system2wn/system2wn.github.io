@@ -8,7 +8,7 @@ github: https://github.com/1878708493/
 baseurl: ""
 description: 宅又非宅的技术又非技术男
 meta_description: 王宁;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
-motto: It's our wits that make us men.
+#motto: It's our wits that make us men.
 banner: 学而不思则罔，思而不学则殆。
 
 #permalink: /:categories/:year/:month/:day/:title/
@@ -27,11 +27,11 @@ markdown: kramdown
 
 FB:
   comments :
-    provider : duoshuo
-    duoshuo:
-        short_name : luoyan35714
-    disqus :
-        short_name : freudkang
+    provider : youyan
+    #duoshuo:
+    #    short_name : 2120415
+    #disqus :
+    #    short_name : freudkang
     # facebook :
     #   appid : 123
     #   num_posts: 5

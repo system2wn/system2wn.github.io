@@ -9,6 +9,8 @@
   {% include LessOrMore/comments-providers/duoshuo %}
 {% when "custom" %}
   {% include custom/comments %}
+{% when "youyan" %}
+  {% include LessOrMore/comments-providers/youyan %}
 {% endcase %}
 
 {% endif %}
