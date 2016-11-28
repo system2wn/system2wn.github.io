@@ -7,20 +7,19 @@ url: http://www.wangning1995.com
 github: https://github.com/1878708493/
 baseurl: ""
 description: 宅又非宅的技术又非技术男
-meta_description: 王宁;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
-#motto: It's our wits that make us men.
-banner: 学而不思则罔，思而不学则殆。
+#meta_description: 王宁;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
+#banner: 学而不思则罔，思而不学则殆。
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
 paginate: 10
 gems: [jekyll-paginate]
 highlighter: rouge
+highlight: true
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
 github_username: 1878708493
-#highlighter: rouge
 
 # Build settings
 markdown: kramdown
@@ -28,12 +27,3 @@ markdown: kramdown
 FB:
   comments :
     provider : youyan
-    #duoshuo:
-    #    short_name : 2120415
-    #disqus :
-    #    short_name : freudkang
-    # facebook :
-    #   appid : 123
-    #   num_posts: 5
-    #   width: 580
-    #   colorscheme: light
