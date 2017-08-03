@@ -277,6 +277,7 @@ jps
 <img src="{{ '/styles/images/2017-08-03-hadoop大数据系统构建（一）：hadoop环境配置/8088.png' | prepend: site.baseurl }}" alt="8088"/>
 
 则说明伪分布安装配置成功了。
+
 停止伪分布式hdfs：
 
 ```
