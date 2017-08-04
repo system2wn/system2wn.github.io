@@ -14,7 +14,7 @@ description: 宅又非宅的技术又非技术男
 permalink: /:year/:month/:day/:title/
 paginate: 10
 gems: [jekyll-paginate]
-highlighter: pygments
+highlighter: rouge
 highlight: true
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
