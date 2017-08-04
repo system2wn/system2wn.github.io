@@ -156,7 +156,7 @@ sudo ln -sf $JRE_HOME jre
 点击【File】—>【Project】，选择【Map/Reduce Project】，输入项目名称WordCount，一直回车。
 
 （2）新建WordCount类，将上面的WordCount源码写入类中，如图：
-<img src="{{ '/styles/images/2017-08-04-hadoop大数据系统构建（二）：运行案例及eclipse上搭建hadoop开发环境/wordcount-r-00000.png' | prepend: site.baseurl }}" alt="wordcount"/>
+<img src="{{ '/styles/images/2017-08-04-hadoop大数据系统构建（二）：运行案例及eclipse上搭建hadoop开发环境/wordcount.png' | prepend: site.baseurl }}" alt="wordcount"/>
 
 （3）点击WordCount.java，右键，点击【Run As】—>【Run Configurations】，配置运行参数，即输入和输出文件夹，如图：
 <img src="{{ '/styles/images/2017-08-04-hadoop大数据系统构建（二）：运行案例及eclipse上搭建hadoop开发环境/runconfiguration.png' | prepend: site.baseurl }}" alt="runconfiguration"/>
