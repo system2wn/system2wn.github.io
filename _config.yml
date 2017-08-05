@@ -6,12 +6,13 @@ url: http://www.wangning1995.com
 #resume_site: http://www.hifreud.com/Resume.io/
 github: https://github.com/1878708493/
 baseurl: ""
-description: 宅又非宅的技术又非技术男
+description: 什么都学点，总没坏处
 #meta_description: 王宁;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
 #banner: 学而不思则罔，思而不学则殆。
 
 #permalink: /:categories/:year/:month/:day/:title/
-permalink: /:year/:month/:day/:title/
+#permalink: /:year/:month/:day/:title/
+permalink: /:title/
 paginate: 10
 gems: [jekyll-paginate]
 highlighter: rouge
