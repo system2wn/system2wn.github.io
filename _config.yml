@@ -1,12 +1,12 @@
 # Site settings
-name: 王宁的博客
-email: 1878708493@qq.com
-author: 王宁
+name: 爱学习的小宁宁的博客
+email: system2wn@163.com
+author: 爱学习的小宁宁
 url: http://wangning1995.top
 #resume_site: http://www.hifreud.com/Resume.io/
 github: https://github.com/system2wn/
 baseurl: ""
-description: 什么都学点，总没坏处
+description: 放开我，我还可以学
 #meta_description: 王宁;个人博客;学而不思则罔;思而不学则殆;生命不止;折腾不休
 #banner: 学而不思则罔，思而不学则殆。
 
@@ -19,7 +19,7 @@ highlight: true
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
-github_username: 1878708493
+github_username: system2wn
 
 # Build settings
 markdown: kramdown
