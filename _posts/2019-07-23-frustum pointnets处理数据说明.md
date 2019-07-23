@@ -60,7 +60,7 @@ label[15]|score字段（没什么用）
 
 综上所述，要从点云坐标**y**转换到2号相机坐标**x**，需要先使用Tr_velo_to_cam，再R0_Rect，最后使用P2：
 
-$$y=P2R0Rect*TrVeloToCam*x$$
+$$y=P2*R0Rect*TrVeloToCam*x$$
 
 要从图像坐标转换到3D相机坐标的话，需要使用相机内参矩阵。
 
