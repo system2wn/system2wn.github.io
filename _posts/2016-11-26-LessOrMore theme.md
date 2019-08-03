@@ -2,7 +2,7 @@
 layout: post
 title:  如何使用LessOrMore这个Jekyll模版构建个人博客
 date:   2016-11-26 13:08:00 +0800
-categories: document
+categories: 代码
 tag: 教程
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title:  frustum pointnets处理数据说明
 date:   2019-07-23 15:50:43 +0800
-categories: 论文代码
-tag: 论文代码
+categories: 代码
+tag: 代码说明
 ---
 
 * content

@@ -2,7 +2,7 @@
 layout: post
 title:  hadoop大数据系统构建（二）：运行案例及eclipse上搭建hadoop开发环境
 date:   2017-08-04 23:55:01 +0800
-categories: hadoop
+categories:	代码
 tag: 大数据
 ---
 前言

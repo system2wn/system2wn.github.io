@@ -2,7 +2,7 @@
 layout: post
 title:  hadoop大数据系统构建（一）：hadoop环境配置
 date:   2017-08-03 13:37:01 +0800
-categories: hadoop
+categories: 代码
 tag: 大数据
 ---
 
