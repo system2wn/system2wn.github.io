@@ -38,7 +38,7 @@ $$L_{\mathcal{D}}(h) \leq L_V(h) + \sqrt{\frac{\ln \frac{1}{\delta}}{2m}}$$
 
 **输入：** 有限假设集$\mathcal{H}$、训练数据集$S=(x_1, y_1), ... , (x_m, y_m)$。
 
-**定义经验风险：** $L_S(h) = \frac{1}{m} |\{ i : h(x_i) \ne y_i \}|$
+**定义经验风险：** $L_S(h) = \frac{1}{m} |{ i : h(x_i) \ne y_i }|$
 
 **输出：** 使得$L_S(h)$最小的那个$h$（$h \in \mathcal{H}$）。
 
