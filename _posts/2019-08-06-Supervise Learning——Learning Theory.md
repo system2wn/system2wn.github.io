@@ -17,12 +17,14 @@ tag: 课程笔记
 
 学习模型这块主要包括了**期望误差**和**经验误差**的重新定义。
 
-存在一个分布$\mathcal{D}$，里面的数据形式为$\mathcal{X} \times \mathcal{Y}$，$\mathcal{Y} = \{0,1\}$。学习所使用的数据是从$\mathcal{D}$中独立同分布采样出的。则对于函数$h : \mathcal{X} \times \mathcal{Y}$：
+存在一个分布$\mathcal{D}$，里面的数据形式为$\mathcal{X} \times \mathcal{Y}$，$\mathcal{Y} = \lbrace 0,1 \rbrace$。学习所使用的数据是从$\mathcal{D}$中独立同分布采样出的。则对于函数$h : \mathcal{X} \times \mathcal{Y}$：
 
 - **期望误差（也叫泛化误差）：** 
-$$L_{\mathcal{D}}(h) = \mathcal{D} (\{ (x,y) : h(x) \ne y \}) = \mathbb{P}_{(x,y) \thicksim \mathcal{D}}[h(x) \ne y]$$
 
-- **经验误差：** 经验误差是在训练集上的误差，在数据集$S = \{ (x_1, y_1), ... , (x_m, y_m)\}$上，经验误差为：
+$$L_{\mathcal{D}}(h) = \mathcal{D} (\lbrace (x,y) : h(x) \ne y \rbrace) = \mathbb{P}_{(x,y) \thicksim \mathcal{D}}[h(x) \ne y]$$
+
+- **经验误差：** 经验误差是在训练集上的误差，在数据集$S = \lbrace (x_1, y_1), ... , (x_m, y_m)\rbrace$上，经验误差为：
+
 $$L_S(h) = \sum_{i=1}^m \frac{1}{m} [h(x_i) \ne y_i]$$
 
 ## 验证集边界
@@ -30,15 +32,16 @@ $$L_S(h) = \sum_{i=1}^m \frac{1}{m} [h(x_i) \ne y_i]$$
 **定理：**
 
 选定一个函数$h$，对任意的$\delta \in (0,1)$。从$\mathcal{D}$上随机采样得到一个大小为m的验证集V。有至少$1-\delta$的概率满足：
+
 $$L_{\mathcal{D}}(h) \leq L_V(h) + \sqrt{\frac{\ln \frac{1}{\delta}}{2m}}$$
 
 这个定理说明了泛化误差可以由在验证集V上的经验误差来界定。所以在实际中我们通过训练集学习出一个算法h，可以根据计算其在验证集上的误差，就可以来界定泛化误差。
 
 ## 经验风险最小化（$ERM_{\mathcal{H}}(S)$）
 
-**输入：** 有限假设集$\mathcal{H}$、训练数据集$S=(x_1, y_1), ... , (x_m, y_m)$。
+**输入：** 有限假设集$\mathcal{H}$、训练数据集$S=\lbrace (x_1, y_1), ... , (x_m, y_m) \rbrace$。
 
-**定义经验风险：** $L_S(h) = \frac{1}{m} |{ i : h(x_i) \ne y_i }|$。
+**定义经验风险：** $L_S(h) = \frac{1}{m} |\lbrace i : h(x_i) \ne y_i \rbrace|$。
 
 **输出：** 使得$L_S(h)$最小的那个$h$（$h \in \mathcal{H}$）。
 
