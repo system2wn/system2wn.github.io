@@ -121,7 +121,7 @@ $m_{\mathcal{H}}$称为学习$\mathcal{H}$的**样本复杂度**。
 
 上一部分提到了$m_{\mathcal{H}}$为学习$\mathcal{H}$的**样本复杂度**。
 
-如果$\mathcal{H}$是一个有限假设集，则由上一部分的第一个定理中的公式可得：若样本复杂度$m_{\mathcal{H}}(\epsilon, \delta) \le \frac{\log(|\mathcal{H}/\delta|)}{\epsilon}$，则$\mathcal{H}$是PAC可学习的。
+如果$\mathcal{H}$是一个有限假设集，则由上一部分的第一个定理中的公式可得：若样本复杂度$m_{\mathcal{H}}(\epsilon,\delta)\le\frac{\log(\vert \mathcal{H}/\delta \vert)}{\epsilon}$，则$\mathcal{H}$是PAC可学习的。
 
 > 样本复杂度可以由VC-维来表示。
 ERM学习规则是一个通用的最优学习器。
