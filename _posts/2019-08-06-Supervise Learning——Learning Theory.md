@@ -41,7 +41,7 @@ $$L_{\mathcal{D}}(h) \leq L_V(h) + \sqrt{\frac{\ln \frac{1}{\delta}}{2m}}$$
 
 **输入：** 有限假设集$\mathcal{H}$、训练数据集$S=\lbrace (x_1, y_1), ... , (x_m, y_m) \rbrace$。
 
-定义经验风险： $L_S(h) = \frac{1}{m} |\lbrace i : h(x_i) \ne y_i \rbrace|$。
+定义经验风险： $L_S(h) = \frac{1}{m} \vert \lbrace i : h(x_i) \ne y_i \rbrace \vert$。
 
 **输出：** 使得$L_S(h)$最小的那个$h$（$h \in \mathcal{H}$）。
 
@@ -99,7 +99,7 @@ $$L_{\mathcal{D}, f^{\ast}}(h) = \mathbb{P}_{x \thicksim \mathcal{D}}[h(x) \ne f
 这里我们设$\mathcal{H}$为有限假设集。使用经验误差最小化，则有如下定理：
 
 固定$\delta, \epsilon \in (0,1)$，如果m满足：
-$$m \ge \frac{\log(|\mathcal{H}/\delta|)}{\epsilon}$$
+$$m \ge \frac{\log(\vert \mathcal{H}/\delta \vert)}{\epsilon}$$
 
 则对于任意的$\mathcal{D}, f^\ast$，都有至少$1-\delta$的概率（对于大小为m的随机采样训练集S）满足：
 $$L_{\mathcal{D}, f^\ast}(ERM_{\mathcal{H}} (S)) \le \epsilon$$
@@ -130,17 +130,17 @@ ERM学习规则是一个通用的最优学习器。
 
 先解释一个概念：**打散（Shatter）：**
 
-定义$C=\lbrace x_1, ... , x_{|C|} \rbrace \subset \mathcal{X}$。
+定义$C=\lbrace x_1, ... , x_{\vert C \vert} \rbrace \subset \mathcal{X}$。
 
 定义$\mathcal{H}_C = \lbrace h_C:h \in \mathcal{H} \rbrace$，其中$h_C:C \to \lbrace -1,1 \rbrace$，且对于每个$x_i \in C$有$h_C(x_i)=h(x_i)$。（可以把$\mathcal{H}_C$理解成$\mathcal{H}$关于C的子集）
 
-可以发现对于每个$h_C$都对应一个结果向量$(h(x_1), ... , h(x_{|C|})) \in {\lbrace \pm 1 \rbrace}^{|C|}$，因此$|\mathcal{H}_C| \le 2^{|C|}$。
+可以发现对于每个$h_C$都对应一个结果向量$(h(x_1), ... , h(x_{\vert C \vert})) \in {\lbrace \pm 1 \rbrace}^{\vert C \vert}$，因此$\vert \mathcal{H}_C \vert \le 2^{\vert C \vert}$。
 
-如果刚好满足$|\mathcal{H}_C| = 2^{|C|}$，我们就称$\mathcal{H}$**打散**了C。
+如果刚好满足$\vert \mathcal{H}_C \vert = 2^{\vert C \vert}$，我们就称$\mathcal{H}$**打散**了C。
 
 定义了打散的概念之后，我们定义**VC-维**的概念：
 
-$$VCdim(\mathcal{H}) = sup\lbrace |C| : \mathcal{H} 打散 C \rbrace$$
+$$VCdim(\mathcal{H}) = sup\lbrace \vert C \vert : \mathcal{H} 打散 C \rbrace$$
 
 即VC-维是$\mathcal{H}$能够打散的集合C的最大size。
 
